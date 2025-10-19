@@ -1,79 +1,252 @@
 <!DOCTYPE html>
-<html>
-
-
-<head> 
-  <meta charset="UTF-8">
-  <meta name="viewport" 
-  content="width=device-width,initial-scale=1.0">
-  <title>Portfolio Website</title>
-  <link rel="stylesheet" href="style.css">
- <!--Font awesome import-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
-integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
-crossorigin="anonymous" referrerpolicy="no-referrer" />
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <header class="header">
-    <a href="#" class="logo">Mathéo</a>
+    <!-- Fond animé avec particules -->
+    <div class="fond-anime" id="fondAnime"></div>
 
-      
-    <i class="fa-solid fa-bars"class="menu-icon"></i>
-    
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <section class="home" id="home">
-    <div class="home-img">
-      <img src="livai.jpg" alt="">
-    </div>
-    <div class="home-content">
-     <h1> Salut, c'est<span> Mathéo</span></h1> 
-     <h3 class="typing-text">Je suis <span></span></h3>
-    <p>actuellement étudiant à Epitech, une école d’informatique reconnue pour sa pédagogie innovante et orientée projet. J’y développe des compétences solides en développement logiciel, gestion de projet et technologies émergentes, tout en travaillant en équipe sur des projets concrets.</p>
-    <div class="social-icon">
-      <a href="#"><i class="fa-brands fa-github"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-    </div>
-    
-    <a href="#" class="btn">Contact Moi</a>
-  </div>
-  </section> 
-  <section class="skills" id="skills">
-    <h2 class="heading">Skills</h2>
+    <!-- Menu de navigation -->
+    <header>
+        <nav>
+            <div class="logo">Mathéo</div>
+            
+            <!-- Menu Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="menu" id="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#coordonnees">Coordonnées</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#qualites">Qualités</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  </section>
-<!--Animation-->
+    <!-- Section Accueil -->
+    <section id="accueil" class="accueil">
+        <div class="accueil-contenu">
+            <div class="photo-profil">
+                <img src="livai.jpg" alt="Photo de profil">
+            </div>
+            <h1>Salut , je suis <span class="nom">Mathéo<br><br></span></h1>
+            <p class="description">actuellement étudiant à Epitech, une école d’informatique reconnue pour sa pédagogie innovante et orientée projet.<br><br>
+            J’y développe des compétences solides en développement logiciel, gestion de projet et technologies émergentes,<br><br>
+            tout en travaillant en équipe sur des projets concrets.</p><br><br>
+            
+                                        
+            <a href="#contact" class="btn">Me contacter</a>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Section Coordonnées -->
+    <section id="coordonnees" class="section">
+        <div class="container">
+            <h2>Coordonnées</h2>
+            <div class="grid-3">
+                <div class="carte">
+                    <span class="icone">📧</span>
+                    <h3>Email</h3>
+                    <p>matheo.spengler@epitech.eu</p>
+                </div>
+                <div class="carte">
+                    <span class="icone">📱</span>
+                    <h3>Téléphone</h3>
+                    <p>+33 7 71 62 89 56</p>
+                </div>
+                <div class="carte">
+                    <span class="icone">📍</span>
+                    <h3>Localisation</h3>
+                    <p>Nancy, France</p>
+                </div>
+                <div class="carte">
+                    <span class="icone">💼</span>
+                    <h3>LinkedIn</h3>
+                    <p></p>
+                </div>
+                <div class="carte">
+                    <span class="icone">📁</span>
+                    <h3>GitHub</h3>
+                    <p><github class="com">
+                    <m>github.com/matheospengler-creator</m></p>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expérience -->
+    <section id="experience" class="section section-sombre">
+        <div class="container">
+            <h2>Expérience Professionnelle</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3></h3>
+                            <p class="entreprise"></p>
+                        </div>
+                        <span class="periode"></span>
+                    </div>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3></h3>
+                            <p class="entreprise"></p>
+                        </div>
+                        <span class="periode"></span>
+                    </div>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3></h3>
+                            <p class="entreprise"></p>
+                        </div>
+                        <span class="periode"></span>
+                    </div>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formations -->
+    <section id="formations" class="section">
+        <div class="container">
+            <h2>Formations</h2>
+            <div class="grid-3">
+                <div class="carte-formation">
+                    <span class="annee">En cours</span>
+                    <h3>Bachelor</h3>
+                    <p class="ecole">Epitech Nancy</p>
+                    <p class="filière">Devenir un professionnel de l’informatique capable de réaliser des projets concrets en équipe, d’apprendre à apprendre, et de vous insérer rapidement sur le marché de la tech.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences Techniques -->
+    <section id="competences" class="section section-sombre">
+        <div class="container">
+            <h2>Compétences Techniques</h2>
+            <div class="grid-4">
+                <div class="competence">
+                    <span class="icone">⚡</span>
+                    <h3>JavaScript</h3>
+                    <p>Débutant</p>
+                </div>
+                <div class="competence">
+                    <span class="icone">🎨</span>
+                    <h3>HTML/CSS</h3>
+                    <p>Débutant</p>
+                </div>
+                <div class="competence">
+                    <span class="icone">🐍</span>
+                    <h3>Python</h3>
+                    <p>Débutant</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Qualités Humaines -->
+    <section id="qualites" class="section">
+        <div class="container">
+            <h2>Compétences Humaines</h2>
+            <div class="grid-4">
+                <div class="qualite">
+                    <span class="icone">🤝</span>
+                    <h3>Travail d'équipe</h3>
+                    <p>Collaboration efficace</p>
+                </div>
+                <div class="qualite">
+                    <span class="icone">💡</span>
+                    <h3>Créativité</h3>
+                    <p>Solutions innovantes</p>
+                </div>
+                <div class="qualite">
+                    <span class="icone">🎯</span>
+                    <h3>Organisation</h3>
+                    <p>Gestion des priorités</p>
+                </div>
+                <div class="qualite">
+                    <span class="icone">🗣️</span>
+                    <h3>Communication</h3>
+                    <p>Échanges clairs</p>
+                </div>
+                <div class="qualite">
+                    <span class="icone">🚀</span>
+                    <h3>Autonomie</h3>
+                    <p>Prise d'initiatives</p>
+                </div>
+                <div class="qualite">
+                    <span class="icone">📚</span>
+                    <h3>Apprentissage</h3>
+                    <p>Curiosité constante</p>
+                </div>
+                <div class="qualite">
+                    <span class="icone">🔍</span>
+                    <h3>Résolution</h3>
+                    <p>Analyse de problèmes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section section-sombre">
+        <div class="container">
+            <h2>Me Contacter</h2>
+            <form class="formulaire" id="formulaire">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <input type="text" placeholder="Sujet" required>
+                <textarea placeholder="Votre message" rows="5" required></textarea>
+                <button type="submit" class="btn">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        
+    </footer>
+
+   
+
+    <script src="script.js"></script>
 </body>
-</html> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
