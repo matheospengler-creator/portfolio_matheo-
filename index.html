@@ -3,250 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mathéo | Portfolio</title>
+    <meta name="description" content="Portfolio de Mathéo, etudiant a Epitech : projets, competences, parcours et contact.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-    <!-- Fond animé avec particules -->
-    <div class="fond-anime" id="fondAnime"></div>
+<body data-theme="dark">
+    <div class="fond-anime" id="fondAnime" aria-hidden="true"></div>
 
-    <!-- Menu de navigation -->
     <header>
         <nav>
-            <div class="logo">Mathéo</div>
-            
-            <!-- Menu Hamburger -->
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a href="#accueil" class="logo">Matheo</a>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Changer de theme">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                    <span class="theme-toggle-label" id="themeLabel">Sombre</span>
+                </button>
+
+                <button class="hamburger" id="hamburger" type="button" aria-label="Ouvrir le menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            
+
             <ul class="menu" id="menu">
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#coordonnees">Coordonnées</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#formations">Formations</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#qualites">Qualités</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#formations">Formation</a></li>
+                <li><a href="#competences">Competences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Section Accueil -->
-    <section id="accueil" class="accueil">
-        <div class="accueil-contenu">
-            <div class="photo-profil">
-                <img src="livai.jpg" alt="Photo de profil">
-            </div>
-            <h1>Salut , je suis <span class="nom">Mathéo<br><br></span></h1>
-            <p class="description">actuellement étudiant à Epitech, une école d’informatique reconnue pour sa pédagogie innovante et orientée projet.<br><br>
-            J’y développe des compétences solides en développement logiciel, gestion de projet et technologies émergentes,<br><br>
-            tout en travaillant en équipe sur des projets concrets.</p><br><br>
-            
-                                        
-            <a href="#contact" class="btn">Me contacter</a>
-        </div>
-    </section>
+    <main>
+        <section id="accueil" class="accueil">
+            <div class="container accueil-grid">
+                <div class="accueil-contenu">
+                    <p class="eyebrow">Etudiant en informatique - Epitech Nancy</p>
+                    <h1>Je conçois des projets concrets, avec une vraie logique produit.</h1>
+                    <p class="description">
+                        Je m'appelle Matheo. Je developpe mes competences a travers des projets pratiques, du travail en equipe. Mon objectif est de construire des experiences utiles, propres et testables.
+                    </p>
 
-    <!-- Section Coordonnées -->
-    <section id="coordonnees" class="section">
-        <div class="container">
-            <h2>Coordonnées</h2>
-            <div class="grid-3">
-                <div class="carte">
-                    <span class="icone">📧</span>
-                    <h3>Email</h3>
-                    <p>matheo.spengler@epitech.eu</p>
-                </div>
-                <div class="carte">
-                    <span class="icone">📱</span>
-                    <h3>Téléphone</h3>
-                    <p>+33 7 71 62 89 56</p>
-                </div>
-                <div class="carte">
-                    <span class="icone">📍</span>
-                    <h3>Localisation</h3>
-                    <p>Nancy, France</p>
-                </div>
-                <div class="carte">
-                    <span class="icone">💼</span>
-                    <h3>LinkedIn</h3>
-                    <p></p>
-                </div>
-                <div class="carte">
-                    <span class="icone">📁</span>
-                    <h3>GitHub</h3>
-                    <p><github class="com">
-                    <m>github.com/matheospengler-creator</m></p>
-                </div>
-                
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Expérience -->
-    <section id="experience" class="section section-sombre">
-        <div class="container">
-            <h2>Expérience Professionnelle</h2>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div>
-                            <h3></h3>
-                            <p class="entreprise"></p>
-                        </div>
-                        <span class="periode"></span>
+                    <div class="hero-points">
+                        <span>JavaScript</span>
+                        <span>HTML / CSS</span>
+                        <span>Python</span>
+                        <span>Travail en equipe</span>
                     </div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div>
-                            <h3></h3>
-                            <p class="entreprise"></p>
-                        </div>
-                        <span class="periode"></span>
+                    <div class="hero-actions">
+                        <a href="#projets" class="btn">Voir mes projets</a>
+                        <a href="#contact" class="btn btn-secondaire">Me contacter</a>
                     </div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div>
-                            <h3></h3>
-                            <p class="entreprise"></p>
+                <aside class="hero-panel">
+                    <div class="profil-card">
+                        <div class="photo-profil">
+                            <img src="" alt="Photo de profil de Matheo">
                         </div>
-                        <span class="periode"></span>
+                        <h2>Matheo</h2>
+                        <p>Disponible pour stage</p>
+                        <ul class="quick-infos">
+                            <li>Nancy, France</li>
+                            <li>matheo.spengler@epitech.eu</li>
+                            <li>07 71 62 89 56</li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section id="projets" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Ce que j'ai realise</p>
+                    <h2>Des projets presentes de façon concrete</h2>
+                    <p class="section-intro">
+                        Cette partie met l'accent sur ce que j'ai construit, mon role, les technologies utilisées
+                        et la possibilite de voir les projets.
+                    </p>
+                </div>
+
+                <div class="projets-grid">
+
+                    <!-- Eliza – Bot SAV Discord -->
+                    <article class="projet-card">
+                        <div class="projet-top">
+                            <h3>Eliza — Bot SAV</h3>
+                            <p>
+                                Bot Discord de service client e-commerce, propulsé par un LLM local.
+                                Il répond uniquement aux questions logistiques (suivi, livraison, retard, réclamation)
+                                et refuse poliment les sujets hors périmètre.
+                            </p>
+                        </div>
+                        <div class="projet-details">
+                            <div>
+                                <h4>Ce que j'ai fait</h4>
+                                <ul>
+                                    <li>Intégration du LLM local (llamafile) via API REST.</li>
+                                    <li>Logique de filtrage des sujets hors périmètre.</li>
+                                    <li>Déploiement et configuration du bot Discord.</li>
+                                </ul>
+                            </div>
+                            <div class="stack">
+                                <span>Node.js</span>
+                                <span>Discord.js</span>
+                                <span>LLM</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tardis – Dashboard SNCF -->
+                    <article class="projet-card">
+                        <div class="projet-top">
+                            <h3>Tardis — Dashboard SNCF</h3>
+                            <p>
+                                Application Streamlit pour explorer les retards SNCF et prédire
+                                le retard moyen à l'arrivée grâce à un modèle de Machine Learning.
+                            </p>
+                        </div>
+                        <div class="projet-details">
+                            <div>
+                                <h4>Ce que j'ai fait</h4>
+                                <ul>
+                                    <li>Exploration et nettoyage du dataset SNCF.</li>
+                                    <li>Entraînement et export d'un modèle de prédiction ML.</li>
+                                    <li>Dashboard interactif avec filtres, KPIs et visualisations.</li>
+                                </ul>
+                            </div>
+                            <div class="stack">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>Scikit-learn</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Alice in Wonderland – Moteur NLP -->
+                    <article class="projet-card">
+                        <div class="projet-top">
+                            <h3>Alice in Wonderland</h3>
+                            <p>
+                                Moteur NLP CLI pour analyser des livres du Project Gutenberg :
+                                diversité lexicale, thèmes par chapitre, entités nommées,
+                                résumé extractif et similarité entre œuvres.
+                            </p>
+                        </div>
+                        <div class="projet-details">
+                            <div>
+                                <h4>Ce que j'ai fait</h4>
+                                <ul>
+                                    <li>Pipeline NLP : tokenisation, extraction d'entités, résumé.</li>
+                                    <li>Calcul de similarité entre livres via représentation vectorielle.</li>
+                                    <li>Interface CLI avec plusieurs modes d'analyse.</li>
+                                </ul>
+                            </div>
+                            <div class="stack">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- NextBuy – Data Science -->
+                    <article class="projet-card">
+                        <div class="projet-top">
+                            <h3>NextBuy</h3>
+                            <p>
+                                Analyse de données e-commerce pour comprendre les comportements d'achat
+                                et prédire le réachat grâce à des modèles de Machine Learning.
+                            </p>
+                        </div>
+                        <div class="projet-details">
+                            <div>
+                                <h4>Ce que j'ai fait</h4>
+                                <ul>
+                                    <li>Nettoyage et fusion de plusieurs datasets CSV.</li>
+                                    <li>EDA : réponse à 8 questions business clés.</li>
+                                    <li>Comparaison de 2 modèles ML pour prédire le réachat.</li>
+                                </ul>
+                            </div>
+                            <div class="stack">
+                                <span>Python</span>
+                                <span>Jupyter</span>
+                                <span>Scikit-learn</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Formations -->
-    <section id="formations" class="section">
-        <div class="container">
-            <h2>Formations</h2>
-            <div class="grid-3">
-                <div class="carte-formation">
-                    <span class="annee">En cours</span>
-                    <h3>Bachelor</h3>
-                    <p class="ecole">Epitech Nancy</p>
-                    <p class="filière">Devenir un professionnel de l’informatique capable de réaliser des projets concrets en équipe, d’apprendre à apprendre, et de vous insérer rapidement sur le marché de la tech.</p>
+        <section id="experience" class="section section-sombre">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Parcours</p>
+                    <h2>Experience et apprentissage</h2>
                 </div>
-                
-            </div>
-        </div>
-    </section>
 
-    <!-- Section Compétences Techniques -->
-    <section id="competences" class="section section-sombre">
-        <div class="container">
-            <h2>Compétences Techniques</h2>
-            <div class="grid-4">
-                <div class="competence">
-                    <span class="icone">⚡</span>
-                    <h3>JavaScript</h3>
-                    <p>Débutant</p>
-                </div>
-                <div class="competence">
-                    <span class="icone">🎨</span>
-                    <h3>HTML/CSS</h3>
-                    <p>Débutant</p>
-                </div>
-                <div class="competence">
-                    <span class="icone">🐍</span>
-                    <h3>Python</h3>
-                    <p>Débutant</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Qualités Humaines -->
-    <section id="qualites" class="section">
-        <div class="container">
-            <h2>Compétences Humaines</h2>
-            <div class="grid-4">
-                <div class="qualite">
-                    <span class="icone">🤝</span>
-                    <h3>Travail d'équipe</h3>
-                    <p>Collaboration efficace</p>
-                </div>
-                <div class="qualite">
-                    <span class="icone">💡</span>
-                    <h3>Créativité</h3>
-                    <p>Solutions innovantes</p>
-                </div>
-                <div class="qualite">
-                    <span class="icone">🎯</span>
-                    <h3>Organisation</h3>
-                    <p>Gestion des priorités</p>
-                </div>
-                <div class="qualite">
-                    <span class="icone">🗣️</span>
-                    <h3>Communication</h3>
-                    <p>Échanges clairs</p>
-                </div>
-                <div class="qualite">
-                    <span class="icone">🚀</span>
-                    <h3>Autonomie</h3>
-                    <p>Prise d'initiatives</p>
-                </div>
-                <div class="qualite">
-                    <span class="icone">📚</span>
-                    <h3>Apprentissage</h3>
-                    <p>Curiosité constante</p>
-                </div>
-                <div class="qualite">
-                    <span class="icone">🔍</span>
-                    <h3>Résolution</h3>
-                    <p>Analyse de problèmes</p>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Projets academiques en informatique</h3>
+                                <p class="entreprise">Epitech Nancy</p>
+                            </div>
+                            <span class="periode">En cours</span>
+                        </div>
+                        <ul>
+                            <li>Developpement de projets concrets avec contraintes techniques.</li>
+                            <li>Travail en equipe, autonomie et resolution de problemes.</li>
+                            <li>Progression continue sur les fondamentaux du developpement.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Contact -->
-    <section id="contact" class="section section-sombre">
-        <div class="container">
-            <h2>Me Contacter</h2>
-            <form class="formulaire" id="formulaire">
-                <input type="text" placeholder="Votre nom" required>
-                <input type="email" placeholder="Votre email" required>
-                <input type="text" placeholder="Sujet" required>
-                <textarea placeholder="Votre message" rows="5" required></textarea>
-                <button type="submit" class="btn">Envoyer le message</button>
-            </form>
-        </div>
-    </section>
+        <section id="formations" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Formation</p>
+                </div>
 
-    <!-- Footer -->
+                <div class="grid-3">
+                    <article class="carte-formation">
+                        <span class="annee">En cours</span>
+                        <h3>Bachelor Informatique</h3>
+                        <p class="ecole">Epitech Nancy</p>
+                        <p class="filiere">
+                            Formation basee sur les projets, l'apprentissage autonome, la collaboration et
+                            la capacite a livrer des solutions concretes.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section section-sombre">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Competences</p>
+                    <h2>Des bases techniques en progression constante</h2>
+                </div>
+
+                <div class="grid-4">
+                    <article class="competence">
+                        <span class="icone">JS</span>
+                        <h3>JavaScript</h3>
+                        <p>Développement d'interfaces dynamiques et interactives en JavaScript moderne</p>
+                    </article>
+                    <article class="competence">
+                        <span class="icone">UI</span>
+                        <h3>HTML/CSS</h3>
+                        <p>Interfaces responsive, structure claire, mise en page.</p>
+                    </article>
+                    <article class="competence">
+                        <span class="icone">PY</span>
+                        <h3>Python</h3>
+                        <p>Développement de scripts en Python pour l'automatisation de tâches et le traitement de données</p>
+                    </article>
+                    <article class="competence">
+                        <span class="icone">IA</span>
+                        <h3>IA/Data</h3>
+                        <p>Prototypage de modèles de Machine Learning et exploration de données sous Jupyter Notebook</p>
+                    </article>
+                    <article class="competence">
+                        <span class="icone">Git</span>
+                        <h3>GitHub</h3>
+                        <p>Utilisation de GitHub pour l'hébergement et le partage de projets collaboratifs.</p>
+                    </article>
+                    <article class="competence">
+                        <span class="icone">Dock</span>
+                        <h3>Docker</h3>
+                        <p>Conteneurisation d'applications avec Docker pour garantir un environnement de développement stable.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-layout">
+                <div class="contact-copy">
+                    <p class="eyebrow">Contact</p>
+                    <h2>On peut echanger sur un projet, un stage </h2>
+                    <p class="section-intro">
+                        Je cherche a continuer a progresser sur des projets concrets.
+                    </p>
+
+                    <div class="contact-cards">
+                        <a class="contact-card" href="https://outlook.office.com/mail/">
+                            <span>Email</span>
+                            <strong>matheo.spengler@epitech.eu</strong>
+                        </a>
+                        <a class="contact-card" href="https://github.com/matheospengler-creator" target="_blank" rel="noreferrer">
+                            <span>GitHub</span>
+                            <strong>matheospengler-creator</strong>
+                        </a>
+                        <a class="contact-card" href="https://www.linkedin.com/in/matheo-spengler-1334653b8/">
+                           <span>Linkedin</span>
+                           <strong>Mathéo Spengler</strong>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="formulaire" id="formulaire">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <input type="text" placeholder="Sujet" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Envoyer le message</button>
+                    <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button class="btn-haut" id="btnHaut" type="button" aria-label="Retour en haut">↑</button>
+
     <footer>
         
     </footer>
 
-   
-
-    <script src="script.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
+
